@@ -1,0 +1,180 @@
+:root {
+	--lightGray: rgba(255, 255, 255, 0.2);
+	--lightOrange: #FF9B85;
+  --borderPink: #E40066;
+  --borderBlue: #345995;
+  --nair: linear-gradient(to right, #E84855, #FF9B71);
+}
+
+
+html {
+	box-sizing: border-box;
+
+}
+
+body {
+  background: lightgray;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-gap: 13px;
+  grid-template-columns: repeat(10, 1fr);
+
+}
+
+
+.item {
+  grid-column: span 10;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.itm {
+  text-align: center;
+}
+
+.tittle {
+  height: 90px;
+  color: #2E3138;
+}
+.navBar {
+  height: 60px;
+  color: #2E3138;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+
+.navHome {
+  grid-column: 4 / 5; 
+}
+
+.navBio {
+  grid-column: 5 / 7; 
+}
+
+.navTours {
+  grid-column: 7 / 8; 
+}
+
+.footer {
+  height: 90px;
+  color: #2E3138;
+}
+
+.content {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(10, 1fr);
+
+ 
+  /*justify-content: center;
+  align-content: center;*/
+
+}
+
+
+.image {
+  grid-column: 1 / -1;
+}
+#pic1 {
+  width: 100%;
+}
+
+.bio {
+  grid-column: 2 / 10;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+
+}
+
+.bioTittle {
+  grid-column: 1 / -1;
+  grid-row: span 1;
+}
+
+.bioPic {
+  grid-column: span 2;
+}
+
+#biopicc {
+  width: 200px;
+  height: 200px;
+}
+
+
+.bioDes {
+  grid-column: span 4;
+}
+
+.tours {
+  grid-column: 2 / 10;
+
+  display: grid;
+  padding: 20px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+.tour {
+  text-align: center;
+  border-radius: 15px;
+  background: lightgray;
+
+}
+
+.tour > p {
+  text-align: center;
+  margin: 20px 20px;
+  height: 300px;
+
+
+
+}
+
+.pictour {
+  width: 90%;
+  margin-top: 10px;
+
+}
+
+.moreContent1 {
+  text-align: center;
+  /*height: 200px;*/
+}
+
+
+.calendar {
+  display: grid;
+  grid-gap: 3px;
+  padding: 20px;
+  margin: 60px 60px;
+  text-align: right;
+
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 100px);
+
+  border: 6px solid lightgray;
+}
+
+.day {
+  border: 1px solid lightgray;
+  /*width: 100px;
+  height: 100px;*/
+}
+
+
+
+
+
+
+
+
+
